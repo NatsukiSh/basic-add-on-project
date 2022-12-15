@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Introduction my hobby -Hiking- for the bigginer who never have done in your life like me. There are so many amazing place to Hiking in Germany🍻🥾"
+    />
     <title>Hiking - My hobby</title>
     <style>
       body {
@@ -125,6 +129,20 @@
       .dark a {
         color: plum;
       }
+
+      .dark contact-button {
+        background: radial-gradient(
+          759px at 14% 22.3%,
+          rgb(10, 64, 88) 0%,
+          rgb(15, 164, 102) 90%
+        );
+        color: white;
+      }
+
+      .dark contact-button:hover {
+        background: white;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -134,47 +152,67 @@
         Did you know Hiking was developed in Europe during the eighteenth
         century?
       </h1>
-      <h2>My favorite hobby</h2>
+      <h2>My peaceful favorite hobby</h2>
       <a href="https://en.wikipedia.org/wiki/Hiking" target="_blank">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/922/original/main.JPG?1671114772"
-          alt=""
+          alt="Peaceful breack fast with beautiful mountain view"
+          title="Amazing mountain view in Berchtesgaden"
           class="main-hiking-picture"
         />
       </a>
       <div class="grid">
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/918/original/boat.JPG?1671114715"
-          alt=""
+          alt="Beautiful weather with two ships at the port"
+          title="Clear water in Schoenau am Koenigssee"
         />
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/920/original/from_the_hill.JPG?1671114744"
-          alt=""
+          alt="From top of the hill"
+          title="Worth to climb up to the top of Marktschellenberg for the view"
         />
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/921/original/in_the_forest.JPG?1671114763"
-          alt=""
+          alt="In the fairytail forest"
+          title="Such a fantastic nature in Berchtesgarden"
         />
         <img
           src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/058/923/original/river.JPG?1671114886"
-          alt=""
+          alt="Beautiful river"
+          title="Emerald green colour of the river in Berchtesgardener Ache"
         />
       </div>
       <p>
         Hiking is a long, vigorous walk, usually on trails or footpaths in the
-        countryside. Walking for pleasure developed in Europe during the
-        eighteenth century. Religious pilgrimages have existed much longer but
-        they involve walking long distances for a spiritual purpose associated
-        with specific religions.
+        countryside. My favourite part of Hiking is reading my favourite book in
+        peaceful nature. Before I learned to hike in Germany, I never imagined
+        myself hiking in the forest (I used be A City Girl💃🍸lol). Now, when
+        the weather is good and tired of desk work, this is how I treat myself
+        on the weekend or on the holidays🌳📖
       </p>
       <div>
         <a href="https://en.wikipedia.org/wiki/Hiking">📖Read on Wikipedia</a>
       </div>
       <br />
+      <button class="contact-button">Let's get in touch</button>
+      <br />
     </div>
     <footer>
-      <a href=""> Coded </a>
-      by Natsuki Shuko with ❤ and HTML, CSS and JavaScript
+      <a
+        href="https://github.com/NatsukiSh/basic-add-on-project"
+        target="_blank"
+      >
+        Coded
+      </a>
+      by
+      <a href="https://www.linkedin.com/in/natsuki-shuko-81890a1b0/">
+        Natsuki Shuko
+      </a>
+      with ❤ and HTML, CSS and JavaScript on
+      <a href="https://reliable-caramel-567c56.netlify.app/" target="_blank"
+        >Netlify</a
+      >
     </footer>
     <br />
     <script>
@@ -185,6 +223,29 @@
       }
       let themeButton = document.querySelector(".theme-button");
       themeButton.addEventListener("click", changeTheme);
+
+      function contactMe() {
+        let firstName = prompt(
+          "Thanks for visiting my page! What is your first name? 😁"
+        );
+        if (firstName.length > 0) {
+          alert("Hello" + " " + firstName + "!");
+        } else {
+          alert("Hello" + " " + "dear" + "!");
+        }
+
+        let message = prompt("Do you have interested in Hiking?🥾");
+        message = message.toLocaleLowerCase().toLocaleUpperCase;
+
+        if (message === "yes") {
+          alert("Get in touch to exchange information!");
+        } else {
+          alert("Believe me worth to try 😁");
+        }
+      }
+
+      let contactButton = document.querySelector(".contact-button");
+      contactButton.addEventListener("click", contactMe);
     </script>
   </body>
 </html>
