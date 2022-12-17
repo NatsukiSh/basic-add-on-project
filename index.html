@@ -228,19 +228,29 @@
         let firstName = prompt(
           "Thanks for visiting my page! What is your first name? 😁"
         );
-        if (firstName.length > 0) {
-          alert("Hello" + " " + firstName + "!");
-        } else {
-          alert("Hello" + " " + "dear" + "!");
-        }
-
-        let message = prompt("Do you have interested in Hiking?🥾");
+        let email = prompt("What is your email address?📮");
+        let message = prompt("Have you gone hike recently?🥾");
         message = message.toLocaleLowerCase().toLocaleUpperCase;
-
-        if (message === "yes") {
-          alert("Get in touch to exchange information!");
+        if (firstName.length > 0) {
+          alert(
+            "Hello" +
+              " " +
+              firstName +
+              "😊" +
+              " " +
+              "Thank you and get in touch to exchange information!👋" +
+              " "
+          );
         } else {
-          alert("Believe me worth to try 😁");
+          alert(
+            "Hello" +
+              " " +
+              "dear" +
+              "😊" +
+              " " +
+              "Thank you and get in touch to exchange information!👋" +
+              " "
+          );
         }
       }
 
